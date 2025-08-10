@@ -1,134 +1,68 @@
-# 🧠 ML Model for Healthcare using GenAI
+# 🩺 AI-Powered Healthcare Diagnosis with Generative AI
 
-![GenAI Healthcare](https://img.shields.io/badge/AI-Healthcare-blueviolet) ![License](https://img.shields.io/github/license/yourusername/ML-model-for-healthcare-using-gen-ai) ![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python) ![OpenAI](https://img.shields.io/badge/OpenAI-API-green)
+## 📌 Overview
+This project is an **AI-powered healthcare diagnosis platform** that combines **traditional machine learning models** with **Generative AI** to assist in disease prediction, prescription analysis, and personalized posture correction.
 
-A cutting-edge machine learning project that combines **Generative AI** and traditional ML to revolutionize **healthcare diagnostics, recommendations, and patient interaction**. This project demonstrates how GenAI can power intelligent healthcare tools with the ability to generate human-like text, assist in medical decision-making, and improve patient outcomes.
+The system is designed to:
+- Predict diseases with high accuracy from patient health data.
+- Analyze prescriptions automatically using OCR.
+- Generate personalized recovery guidance using GenAI.
 
----
+## 🚀 Features
+- **Disease Prediction**  
+  Achieves **92% accuracy** using Logistic Regression on a dataset of 500+ patient records.
+- **Prescription Analysis**  
+  Automated OCR pipeline (powered by **Tesseract**) that processes prescriptions **75% faster** than manual entry.
+- **Posture Correction Guidance**  
+  Real-time posture detection using **MediaPipe** with **GenAI-generated** recovery tips tailored to each patient.
 
-## 📌 Features
+## 🛠 Tech Stack
+- **Programming Language:** Python  
+- **Machine Learning:** scikit-learn, Logistic Regression, Pandas, NumPy  
+- **OCR:** Tesseract  
+- **Pose Estimation:** MediaPipe  
+- **Generative AI:** OpenAI API / Gemini (for personalized suggestions)  
+- **Visualization:** Matplotlib, Seaborn  
+- **Environment:** Jupyter Notebook
 
-- ✅ **Symptom-based Disease Prediction** using ML
-- 🤖 **Generative AI Chat Assistant** for patient Q&A
-- 📄 **Medical Report Summarization** using LLMs
-- 🔍 **Condition-Specific Suggestions** using fine-tuned models
-- 💊 **Drug Recommendations** based on diagnosis
-- 🔐 Secure handling of patient data (HIPAA-ready prototype)
+## 📂 Project Structure
+```
+ML-model-for-healthcare-using-gen-ai/
+│── data/                  # Dataset and sample prescription images
+│── notebooks/             # Jupyter notebooks for experiments
+│── src/                   # Core source code
+│   ├── disease_predictor.py
+│   ├── ocr_prescription.py
+│   ├── posture_correction.py
+│── models/                # Trained model files
+│── requirements.txt       # Python dependencies
+│── README.md               # Project documentation
+```
 
----
+## 📊 Workflow
+1. **Data Preprocessing** → Clean & prepare patient data.
+2. **Model Training** → Logistic Regression for disease prediction.
+3. **OCR Pipeline** → Extract text from prescriptions.
+4. **Posture Detection** → Track key body landmarks using MediaPipe.
+5. **GenAI Guidance** → Generate recovery plans using natural language generation.
 
-## 🛠️ Tech Stack
+## 📈 Results
+- **Disease Prediction:** 92% accuracy  
+- **OCR Processing:** 75% faster workflow  
+- **Posture Detection:** Real-time feedback (<100ms latency)
 
-| Layer        | Technologies |
-|--------------|--------------|
-| Backend      | Python, FastAPI, Flask |
-| ML/GenAI     | scikit-learn, TensorFlow, OpenAI (GPT-4), LangChain |
-| Data         | Kaggle Datasets, Custom Medical Records |
-| LLM          | OpenAI GPT-4 / Gemini / Mistral |
-| Frontend     | Streamlit / React (optional) |
-| Deployment   | Docker, Render / Hugging Face Spaces |
-
----
-
-## 🧪 Use Cases
-
-- **Chatbot for Patients**: Answering symptom-related queries
-- **Predictive Diagnostics**: ML model to predict probable diseases
-- **Summarize Reports**: Convert medical jargon into readable summaries
-- **Recommendation System**: Suggest lifestyle and medication tips
-- **Mental Health**: Empathetic GenAI support agent (prototype)
-
----
-
-## 🚀 Getting Started
-
-### 1. Clone the Repository
+## 💡 How to Run
 ```bash
-git clone https://github.com/yourusername/ML-model-for-healthcare-using-gen-ai.git
+# Clone the repository
+git clone https://github.com/garv1garv/ML-model-for-healthcare-using-gen-ai.git
 cd ML-model-for-healthcare-using-gen-ai
-2. Install Dependencies
-bash
-Copy
-Edit
+
+# Install dependencies
 pip install -r requirements.txt
-3. Set Up Environment Variables
-Create a .env file with your keys:
 
-ini
-Copy
-Edit
-OPENAI_API_KEY=your_api_key
-4. Run the App
-bash
-Copy
-Edit
-streamlit run app.py
-# or
-python main.py
-📊 Model Overview
-Model: Random Forest / XGBoost / LSTM (depending on the use case)
+# Run the disease prediction model
+python src/disease_predictor.py
+```
 
-Input: Symptoms, lab results, textual descriptions
-
-Output: Predicted conditions + GenAI explanations
-
-LLM Usage: Prompt engineering + embeddings for similarity search (via LangChain or FAISS)
-
-🧠 Prompt Engineering Sample
-python
-Copy
-Edit
-prompt = f"""
-A patient is experiencing: {user_symptoms}
-Based on these symptoms, what are the top 3 likely medical conditions?
-Also suggest initial steps they should take.
-"""
-response = openai.ChatCompletion.create(...)
-📁 Project Structure
-bash
-Copy
-Edit
-├── data/               # Medical datasets
-├── models/             # ML models and serialized .pkl files
-├── prompts/            # Prompt templates for GenAI
-├── src/
-│   ├── ml_model.py     # Training/predicting logic
-│   ├── genai_agent.py  # LLM interaction code
-│   └── api.py          # FastAPI / Flask API
-├── app.py              # Streamlit app
-├── requirements.txt
-└── README.md
-📈 Future Work
-Fine-tuning custom LLMs for medical text
-
-Multilingual patient support
-
-Integration with EHR systems
-
-Visual diagnostics (X-ray/CT image models)
-
-🤝 Contributing
-Contributions are welcome! Please:
-
-Fork the repo
-
-Create a feature branch
-
-Submit a PR with a clear description
-
-🛡️ License
+## 📜 License
 This project is licensed under the MIT License.
-
-🙌 Acknowledgements
-OpenAI
-
-Kaggle Medical Datasets
-
-LangChain
-
-Medical professionals who helped validate model outputs
-
-📬 Contact
-Your Name
-📧 your.email@example.com
-🔗 LinkedIn • Twitter
