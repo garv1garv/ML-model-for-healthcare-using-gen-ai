@@ -1,6 +1,6 @@
-# 🩺 AI-Powered Healthcare Diagnosis with Generative AI
+#  AI-Powered Healthcare Diagnosis with Generative AI
 
-## 📌 Overview
+## Overview
 This project is an **AI-powered healthcare diagnosis platform** that combines **traditional machine learning models** with **Generative AI** to assist in disease prediction, prescription analysis, and personalized posture correction.
 
 The system is designed to:
@@ -8,7 +8,7 @@ The system is designed to:
 - Analyze prescriptions automatically using OCR.
 - Generate personalized recovery guidance using GenAI.
 
-## 🚀 Features
+##  Features
 - **Disease Prediction**  
   Achieves **92% accuracy** using Logistic Regression on a dataset of 500+ patient records.
 - **Prescription Analysis**  
@@ -16,7 +16,7 @@ The system is designed to:
 - **Posture Correction Guidance**  
   Real-time posture detection using **MediaPipe** with **GenAI-generated** recovery tips tailored to each patient.
 
-## 🛠 Tech Stack
+## 🛠Tech Stack
 - **Programming Language:** Python  
 - **Machine Learning:** scikit-learn, Logistic Regression, Pandas, NumPy  
 - **OCR:** Tesseract  
@@ -25,7 +25,7 @@ The system is designed to:
 - **Visualization:** Matplotlib, Seaborn  
 - **Environment:** Jupyter Notebook
 
-## 📂 Project Structure
+##  Project Structure
 ```
 ML-model-for-healthcare-using-gen-ai/
 │── data/                  # Dataset and sample prescription images
@@ -39,19 +39,19 @@ ML-model-for-healthcare-using-gen-ai/
 │── README.md               # Project documentation
 ```
 
-## 📊 Workflow
+##  Workflow
 1. **Data Preprocessing** → Clean & prepare patient data.
 2. **Model Training** → Logistic Regression for disease prediction.
 3. **OCR Pipeline** → Extract text from prescriptions.
 4. **Posture Detection** → Track key body landmarks using MediaPipe.
 5. **GenAI Guidance** → Generate recovery plans using natural language generation.
 
-## 📈 Results
+##  Results
 - **Disease Prediction:** 92% accuracy  
 - **OCR Processing:** 75% faster workflow  
 - **Posture Detection:** Real-time feedback (<100ms latency)
 
-## 💡 How to Run
+##  How to Run
 ```bash
 # Clone the repository
 git clone https://github.com/garv1garv/ML-model-for-healthcare-using-gen-ai.git
@@ -64,5 +64,5 @@ pip install -r requirements.txt
 python src/disease_predictor.py
 ```
 
-## 📜 License
+##  License
 This project is licensed under the MIT License.
